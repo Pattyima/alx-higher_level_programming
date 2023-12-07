@@ -1,14 +1,6 @@
+#!/usr/bin/python3
 def square_matrix_simple(matrix=[]):
-    # Get the dimensions of the matrix
-    rows = len(matrix)
-    cols = len(matrix[0]) if matrix else 0
-    
-    # Create a new matrix to store squared values
-    squared_matrix = [[0 for _ in range(cols)] for _ in range(rows)]
-    
-    # Compute the square value for each element in the matrix
-    for i in range(rows):
-        for j in range(cols):
-            squared_matrix[i][j] = matrix[i][j] ** 2
-    
-    return squared_matrix
+    new_matrix = []
+    for i in range(len(matrix)):
+        new_matrix += [list(map(lambda x: x ** 2, matrix[i]))]
+    return new_matrix
