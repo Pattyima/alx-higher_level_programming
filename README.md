@@ -1,1 +1,1 @@
-# alx-higher_level_programming
+javascript objects scopes closures
